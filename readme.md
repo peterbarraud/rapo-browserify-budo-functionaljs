@@ -21,9 +21,10 @@ npm start
 ```
 2. Open the Chrome DevTools and go to the Network tab
 3. If you see a message at the bottom, you might have to press `F5`. Go ahead and do that.
+![Press F5](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-press-F5.png)
 4. Click JS in the Filter menu.
 You will see the sizes of the different JS files
-![alt text](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab.png)
+![Network tab](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab.png)
 
 ## Include underscore
 1. Get `underscore`
@@ -35,6 +36,7 @@ npm i underscore --save
 var _ = require('underscore');
 ```
 `bundle.js` => 139 KB
+![Include underscore: bundle.js => 139 KB] (https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-underscore.png)
 
 ## Include lodash
 1. Get `lodash`
@@ -46,10 +48,11 @@ npm i lodash --save
 var _ = require('underscore');
 ```
 `lodash.js` => 1.3 MB (Now that's pretty big!)
+![Include lodash: bundle.js => 1.3 MB] (https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-lodash.png)
 
 **Important**: [Here](https://stackoverflow.com/a/13898916/4672179)'s a fantastic reason why you *should* use `lodash`. From the creator himself.
 
-## npm libraries
+## Include npm libraries
 Finally, let's get the npm libs that just do what we need
 
 1. Get [`foreach`](https://www.npmjs.com/package/foreach), [`array-reduce`](https://www.npmjs.com/package/array-reduce), [`array-filter`](https://www.npmjs.com/package/array-filter) and [`array-map`](https://www.npmjs.com/package/array-map)
@@ -64,5 +67,6 @@ var filter = require('array-filter');
 var map = require('array-map');
 ```
 `npm libs` => 11 KB
+![Include npm libraries: npm libs => 11 KB] (https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-npm_libs.png)
 
 So it would appear that picking these makes sense. That's what I think. Let me know what you think.
