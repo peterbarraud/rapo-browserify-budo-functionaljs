@@ -23,7 +23,7 @@ npm start
 3. If you see a message at the bottom, you might have to press `F5`. Go ahead and do that.
 4. Click JS in the Filter menu.
 You will see the sizes of the different JS files
-![alt text](/blob/master/imgs/network-tab.png)
+![alt text](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab.png)
 
 ## Include underscore
 1. Get `underscore`
