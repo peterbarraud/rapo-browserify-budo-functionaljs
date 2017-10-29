@@ -5,7 +5,9 @@
   "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo entry.js:bundle.js --live --open"
+    "start": "budo entry.js:bundle.js --live --open",
+    "build": "node build",
+    "cleanup": "node cleanup"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,12 @@
   },
   "homepage": "https://github.com/peterbarraud/rapo-browserify-part-1#readme",
   "devDependencies": {
-    "budo": "^10.0.4"
+    "budo": "^10.0.4",
+    "file-copy": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "uglifycss": "0.0.27",
+    "uglifyify": "^4.0.4"
   },
   "dependencies": {
     "domready": "^1.0.8",
