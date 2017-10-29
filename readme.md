@@ -36,7 +36,7 @@ npm i underscore --save
 var _ = require('underscore');
 ```
 `bundle.js` => 139 KB
-![Include underscore: bundle.js => 139 KB] (https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-underscore.png)
+![Include underscore: bundle.js => 139 KB](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-underscore.png)
 
 ## Include lodash
 1. Get `lodash`
@@ -48,7 +48,7 @@ npm i lodash --save
 var _ = require('underscore');
 ```
 `lodash.js` => 1.3 MB (Now that's pretty big!)
-![Include lodash: bundle.js => 1.3 MB] (https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-lodash.png)
+![Include lodash: bundle.js => 1.3 MB](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-lodash.png)
 
 **Important**: [Here](https://stackoverflow.com/a/13898916/4672179)'s a fantastic reason why you *should* use `lodash`. From the creator himself.
 
@@ -67,6 +67,6 @@ var filter = require('array-filter');
 var map = require('array-map');
 ```
 `npm libs` => 11 KB
-![Include npm libraries: npm libs => 11 KB] (https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-npm_libs.png)
+![Include npm libraries: npm libs => 11 KB](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-npm_libs.png)
 
 So it would appear that picking these makes sense. That's what I think. Let me know what you think.
