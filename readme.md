@@ -22,7 +22,8 @@ npm start
 2. Open the Chrome DevTools and go to the Network tab
 3. If you see a message at the bottom, you might have to press `F5`. Go ahead and do that.
 4. Click JS in the Filter menu.
-You will see the sizes of the different JS files included
+You will see the sizes of the different JS files
+![alt text](https://github.com/peterbarraud/rapo-browserify-budo-functionaljs/blob/master/imgs/network-tab-with-lodash.png)
 
 ## Include underscore
 1. Get `underscore`
@@ -51,7 +52,7 @@ var _ = require('underscore');
 ## npm libraries
 Finally, let's get the npm libs that just do what we need
 
-1. Get `foreach`, `array-reduce`, `array-filter` and `array-map`
+1. Get [`foreach`](https://www.npmjs.com/package/foreach), [`array-reduce`](https://www.npmjs.com/package/array-reduce), [`array-filter`](https://www.npmjs.com/package/array-filter) and [`array-map`](https://www.npmjs.com/package/array-map)
 ```
 npm i `foreach array-reduce array-filter array-map --save
 ```
@@ -64,4 +65,4 @@ var map = require('array-map');
 ```
 `npm libs` => 11 KB
 
-So it would appear that picking these makes. That's what I think. Let me know what you think.
+So it would appear that picking these makes sense. That's what I think. Let me know what you think.
